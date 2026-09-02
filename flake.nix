@@ -20,12 +20,7 @@
           src = pkgs.lib.cleanSource ./.;
           lispSystem = "dev";
           lispDependencies = [ ];
-
           dontBuild = true;
-          nativeBuildInputs = with pkgs; [
-            pkg-config
-            pre-commit
-          ];
         };
     };
 }
