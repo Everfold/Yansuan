@@ -16,7 +16,7 @@
         pkgs:
         with pkgs.lispPackagesLite;
         lispDerivation {
-          name = "sunmao";
+          name = "yansuan";
           src = pkgs.lib.cleanSource ./.;
           lispSystem = "dev";
           lispDependencies = [ ];

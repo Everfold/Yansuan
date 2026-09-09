@@ -1,5 +1,5 @@
-# sunmao
+# Yansuan
 
 ***WIP***, still planning.
 
-> *榫卯/Sun Mao/Mortise*
+> *衍算/Yansuan*
