@@ -1,9 +1,43 @@
-# Created by https://www.toptal.com/developers/gitignore/api/linux,direnv,visualstudiocode
-# Edit at https://www.toptal.com/developers/gitignore?templates=linux,direnv,visualstudiocode
+# Created by https://www.toptal.com/developers/gitignore/api/linux,direnv,visualstudiocode,erlang,elixir
+# Edit at https://www.toptal.com/developers/gitignore?templates=linux,direnv,visualstudiocode,erlang,elixir
 
 ### direnv ###
 .direnv
 .envrc
+
+### Elixir ###
+/_build
+/cover
+/deps
+/doc
+/.fetch
+erl_crash.dump
+*.ez
+*.beam
+/config/*.secret.exs
+.elixir_ls/
+
+### Elixir Patch ###
+
+### Erlang ###
+.eunit
+*.o
+*.plt
+.concrete/DEV_MODE
+
+# rebar 2.x
+.rebar
+rel/example_project
+ebin/*.beam
+deps
+
+# rebar 3
+.rebar3
+_build/
+_checkouts/
+
+### Erlang Patch ###
+rebar3.crashdump
 
 ### Linux ###
 *~
@@ -39,8 +73,12 @@
 .history
 .ionide
 
-# End of https://www.toptal.com/developers/gitignore/api/linux,direnv,visualstudiocode
+# End of https://www.toptal.com/developers/gitignore/api/linux,direnv,visualstudiocode,erlang,elixir
 
 # spec-kit
 .specify/**/*.py
 .specify/**/*.sh
+
+# Dev
+.nix-mix/
+.nix-hex/
